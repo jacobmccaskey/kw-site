@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Shortcuts from "./shortcuts.js";
 import Events from "./events";
 import ContactForm from "./contactform";
+import Header from "./header";
 
 import mcLogo from "../img/mclogo.jpg";
 
@@ -11,6 +12,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div className="container">
+          <Header />
           <img className="photo" src={mcLogo} alt="mclogo" />
         </div>
         <div className="container body-txt">

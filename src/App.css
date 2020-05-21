@@ -67,6 +67,8 @@ img {
 .form {
   max-width: 600px;
   margin-left: 22%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form-center {
@@ -77,4 +79,22 @@ img {
 textarea {
   width: 80%;
   height: auto;
+}
+
+.footer {
+  padding-top: 10px;
+  margin-top: 0;
+  border-top: unset;
+  display: block;
+  color: grey;
+  background-image: -webkit-linear-gradient(black, rgb(44, 44, 44));
+  height: 150px;
+  width: auto;
+}
+
+.calendar {
+  border: 0;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
 }
