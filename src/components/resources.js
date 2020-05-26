@@ -38,20 +38,50 @@ function Resources() {
       <Fade bottom>
         <div className="container-sm text-left">
           <hr />
-          <p style={{ fontWeight: 600 }} className="text-left">
-            Support
+          <div className="container-sm">
+            {" "}
+            <p style={{ fontWeight: 600 }}>Support</p>
+            <span>
+              {" "}
+              Please contact the office at 813-865-0700 or email
+              frontdesk738@kw.com to reserve a conference room. For any tech
+              related questions, please email Jacob at jacobmccaskey@kw.com
+            </span>
+          </div>
+          <br />
+          <p
+            className="text-left"
+            style={{ fontWeight: 500, textDecoration: "underline" }}
+          >
+            Scott Le Roy Marketing
           </p>
 
-          <p className="text-left">Scott Le Roy</p>
-          <br />
           <span>
-            <i>support@scottleroy.com</i>
+            <i>support@scottleroymarketing.com</i>
           </span>
           <br />
-          <p className="text-left">Keller Williams Support</p>
-          <span>some email</span>
+          <span>(321) 236-2568</span>
+
           <br />
-          <i>888-888-8888</i>
+          <br />
+          <p
+            className="text-left"
+            style={{ fontWeight: 500, textDecoration: "underline" }}
+          >
+            Office Support
+          </p>
+          <span>phone: (813) 865-0700</span>
+          <br />
+          <span>Jacob McCaskey | Agent Services | jacobmccaskey@kw.com</span>
+          <br />
+          <span>Marta Vega | Market Center Administrator | klrw738@kw.com</span>
+          <br />
+
+          <span>Dallas Coffield | Team Leader | dcoffield@kw.com</span>
+          <br />
+          <span>
+            Danny Gitsas | Director of First Impressions | frontdesk738@kw.com
+          </span>
         </div>
       </Fade>
       {/* training */}
