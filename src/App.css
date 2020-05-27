@@ -98,3 +98,19 @@ textarea {
   height: 600px;
   overflow: hidden;
 }
+
+.box {
+  position: relative;
+  display: inline-block;
+}
+
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 60%;
+}

@@ -24,6 +24,10 @@ function resourceDrive() {
   );
 }
 
+function openNewWindow(website) {
+  window.open(`${website}`);
+}
+
 export {
   training,
   connect,
@@ -31,4 +35,5 @@ export {
   facebookGroup,
   websiteGuide,
   resourceDrive,
+  openNewWindow,
 };
