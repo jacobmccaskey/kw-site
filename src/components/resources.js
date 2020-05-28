@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import skyScraper from "../img/skyscraper.jpg";
+import { Link } from "react-router-dom";
+import * as Routes from "../constants/routes";
+
 import * as Util from "./util";
 
 class Resources extends Component {
@@ -159,7 +162,9 @@ class Resources extends Component {
               Would you like to learn more about coaching?
             </p>
             <div className="container-sm">
-              <button className="btn btn-outline-danger">Click Here</button>
+              <Link to={Routes.COACHING} className="btn btn-outline-danger">
+                Click Here
+              </Link>
             </div>
           </div>
         </Fade>
@@ -177,14 +182,12 @@ class Resources extends Component {
               click on the link below to access our calendar.
             </span>
             <div className="container-sm">
-              <button
+              <Link
+                to={Routes.CALENDAR}
                 className="btn btn-outline-danger mt-2"
-                onClick={() => {
-                  window.open("http://localhost:3000/calendar");
-                }}
               >
                 Calendar
-              </button>
+              </Link>
             </div>
           </div>
         </Fade>

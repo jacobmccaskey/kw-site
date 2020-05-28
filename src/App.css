@@ -1,6 +1,7 @@
 * {
   text-align: center;
 }
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
 hero-img {
   background-image: url("https://res.cloudinary.com/peerspace-inc/image/upload/t6emomlkxxpyaymcn3z2.jpg");
@@ -87,7 +88,7 @@ textarea {
   border-top: unset;
   display: block;
   color: grey;
-  background-image: -webkit-linear-gradient(black, rgb(44, 44, 44));
+  background-image: -webkit-linear-gradient(rgb(44, 44, 44), black);
   height: 150px;
   width: auto;
 }
@@ -113,4 +114,25 @@ textarea {
   top: 30%; /* Adjust this value to move the positioned div up and down */
   text-align: center;
   width: 60%;
+}
+
+.image-box {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.coaching-font {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.coach-btn {
+  width: 60%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.coach-p {
+  font-family: "Playfair Display", serif;
 }

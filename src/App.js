@@ -5,6 +5,7 @@ import NavBar from "./components/navbar.js";
 import Home from "./components/home";
 import Calendar from "./components/calendar";
 import Resources from "./components/resources";
+import Coaches from "./components/coaching";
 import Footer from "./components/footer";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
@@ -17,6 +18,7 @@ function App() {
         <Route exact path={Routes.HOME} component={Home} />
         <Route path={Routes.CALENDAR} component={Calendar} />
         <Route path={Routes.RESOURCES} component={Resources} />
+        <Route path={Routes.COACHING} component={Coaches} />
       </Router>
 
       <Footer />

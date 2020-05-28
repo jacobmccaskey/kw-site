@@ -35,9 +35,9 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           Quick Guide
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
