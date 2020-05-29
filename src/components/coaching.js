@@ -1,6 +1,6 @@
 import React from "react";
-// import CoachContactForm from "./coachmodal";
 import Fade from "react-reveal/Fade";
+import CoachContactForm from "./coachmodal";
 import * as Util from "./util";
 import logo from "../img/coach-logo.jpg";
 import billy from "../img/billy.png";
@@ -60,12 +60,10 @@ function Coaches() {
             Tampa Central offers a coaching program for agents that want to take
             their business to the next level. If you are looking for
             personalized, one-on-one training, the platinum coaching program is
-            for you.
+            for you!
           </p>
           <br />
-          <button className="btn btn-danger mb-4 coach-btn">
-            Contact Coaches
-          </button>
+          <CoachContactForm />
         </Fade>
       </div>
     </React.Fragment>

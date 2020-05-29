@@ -17,12 +17,11 @@ class Shortcuts extends Component {
               </button>
             </th>
             <th scope="col">
-              <button
-                className="btn btn-lg btn-danger button"
-                onClick={Util.training}
-              >
-                Training
-              </button>
+              <Link to={Routes.TUTORIALS}>
+                <button className="btn btn-lg btn-danger button">
+                  Tutorials
+                </button>
+              </Link>
             </th>
             <th scope="col">
               <Link to={Routes.CALENDAR}>

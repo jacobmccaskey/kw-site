@@ -7,6 +7,7 @@ import Calendar from "./components/calendar";
 import Resources from "./components/resources";
 import Coaches from "./components/coaching";
 import Footer from "./components/footer";
+import Tutorials from "./components/tutorials";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path={Routes.CALENDAR} component={Calendar} />
         <Route path={Routes.RESOURCES} component={Resources} />
         <Route path={Routes.COACHING} component={Coaches} />
+        <Route path={Routes.TUTORIALS} component={Tutorials} />
       </Router>
 
       <Footer />

@@ -259,6 +259,13 @@ class Resources extends Component {
                   >
                     KWU Guides
                   </button>
+
+                  <Link
+                    to={Routes.TUTORIALS}
+                    className="btn btn-outline-secondary mr-2 mt-1"
+                  >
+                    Tutorials
+                  </Link>
                 </th>
               </thread>
             </table>
