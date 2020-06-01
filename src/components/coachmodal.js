@@ -66,7 +66,7 @@ class CoachContactForm extends Component {
 
         <Modal
           show={this.state.show}
-          onHide={this.handleShow}
+          onHide={() => this.handleShow()}
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
           centered

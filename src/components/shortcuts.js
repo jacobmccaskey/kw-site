@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import * as Routes from "../constants/routes";
+import FacebookModal from "./facebookModal";
 import { Link } from "react-router-dom";
 import * as Util from "./util";
 
@@ -64,12 +65,13 @@ class Shortcuts extends Component {
               </button>
             </th>
             <th scope="col">
-              <button
+              <FacebookModal />
+              {/* <button
                 className="btn btn-lg btn-danger button"
                 onClick={Util.facebookGroup}
               >
                 Facebook Group
-              </button>
+              </button> */}
             </th>
           </thread>
         </table>

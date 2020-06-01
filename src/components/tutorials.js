@@ -2,7 +2,6 @@ import React from "react";
 
 import Fade from "react-reveal/Fade";
 import * as Util from "./util";
-import "video-react/dist/video-react.css";
 
 function Tutorials() {
   return (
@@ -53,13 +52,52 @@ function Tutorials() {
               Video Walkthrough: 66-Day Command Challenge
             </h2>
             <span>
-              <i> follow along </i>
+              <i>
+                {" "}
+                <a href="https://www.youtube.com/playlist?list=PLK75KZDqV1zmYQF-hNPH2Qt9GHkUHuId4">
+                  full series{" "}
+                </a>
+              </i>
             </span>
+            <br />
             <iframe
               title="66 day challenge"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/r-XZErph4yA"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="container mt-4 mb-4">
+            <hr />
+            <h2 className="coach-p">
+              Video Walkthrough: Smart Plans & Campaigns
+            </h2>
+            <span>
+              <i>email marketing</i>
+            </span>
+            <br />
+            <iframe
+              title="smart plans"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ZW6Qwxd8VkI"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="container-mt-4 mb-4">
+            <hr />
+            <h2 className="coach-p">Video Walkthrough: Commissions</h2>
+            <br />
+            <iframe
+              title="commissions"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Iu3VYZxbk-s"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
