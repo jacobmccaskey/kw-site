@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import validator from "validator";
 
 class CoachContactForm extends Component {
   state = {
@@ -11,6 +12,24 @@ class CoachContactForm extends Component {
     beforeFormSubmitMessage: "Contact Coaches",
     afterFormSubmit: "Thank you for contacting us!",
     coachBtn: true,
+    validateForm: false,
+  };
+
+  validateAndSend = (e) => {
+    if (
+      validator.isAlpha(this.state.name) === true &&
+      validator.isEmail(this.state.email) === true &&
+      validator.isAscii(this.state.message) === true
+    ) {
+      this.setState({
+        validateForm: true,
+      });
+      this.handleSubmit();
+      this.handleClose();
+    } else {
+      alert("not a valid entry");
+    }
+    e.preventDefault();
   };
 
   handleChange = (e) => {
@@ -19,7 +38,7 @@ class CoachContactForm extends Component {
     });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = () => {
     fetch("http://localhost:4000/coaching/post", {
       method: "POST",
       headers: {
@@ -34,8 +53,6 @@ class CoachContactForm extends Component {
     this.setState({
       coachBtn: false,
     });
-    this.handleClose();
-    e.preventDefault();
   };
 
   handleShow = () => {
@@ -50,6 +67,7 @@ class CoachContactForm extends Component {
       name: "",
       email: "",
       message: "",
+      validateForm: false,
     });
   };
   render() {
@@ -75,7 +93,7 @@ class CoachContactForm extends Component {
             <Modal.Title>Contact Us</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <form onSubmit={(e) => this.handleSubmit(e)}>
+            <form onSubmit={(e) => this.validateAndSend(e)}>
               <span className="coach-p">Full Name</span>
               <br />
               <input
@@ -108,7 +126,7 @@ class CoachContactForm extends Component {
             <Button variant="secondary" onClick={this.handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={(e) => this.handleSubmit(e)}>
+            <Button variant="primary" onClick={(e) => this.validateAndSend(e)}>
               Send
             </Button>
           </Modal.Footer>

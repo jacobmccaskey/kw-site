@@ -24,10 +24,10 @@ class FacebookModal extends Component {
     return (
       <React.Fragment>
         <button
-          className="btn btn-danger btn-lg button"
           onClick={() => this.openModal()}
+          className="btn btn-danger btn-lg button"
         >
-          Facebook Groups
+          Get Connected
         </button>
         <Modal
           show={this.state.show}

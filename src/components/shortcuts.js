@@ -13,9 +13,12 @@ class Shortcuts extends Component {
         <table className="table">
           <thread>
             <th scope="col">
-              <button className="btn btn-lg btn-danger button">
+              <Link
+                to={Routes.RESOURCES}
+                className="btn btn-lg btn-danger button"
+              >
                 Getting Started
-              </button>
+              </Link>
             </th>
             <th scope="col">
               <Link to={Routes.TUTORIALS}>
@@ -65,13 +68,7 @@ class Shortcuts extends Component {
               </button>
             </th>
             <th scope="col">
-              <FacebookModal />
-              {/* <button
-                className="btn btn-lg btn-danger button"
-                onClick={Util.facebookGroup}
-              >
-                Facebook Group
-              </button> */}
+              <FacebookModal className="btn btn-danger btn-lg button" />
             </th>
           </thread>
         </table>

@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
 * {
   text-align: center;
 }
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
+p {
+  font-family: "Playfair Display", serif;
+}
+span {
+  font-family: "Playfair Display", serif;
+}
 hero-img {
   background-image: url("https://res.cloudinary.com/peerspace-inc/image/upload/t6emomlkxxpyaymcn3z2.jpg");
 
@@ -135,4 +143,15 @@ textarea {
 
 .coach-p {
   font-family: "Playfair Display", serif;
+}
+
+a {
+  color: red;
+}
+
+.cover {
+  display: block;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 15px;
 }

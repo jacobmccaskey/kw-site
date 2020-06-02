@@ -1,19 +1,38 @@
 import React, { Component } from "react";
+import validator from "validator";
 
 class ContactForm extends Component {
   state = {
     name: "",
     email: "",
     message: "",
+    show: null,
+    formReply: "Thank you for contacting us!",
+    validateForm: false,
   };
 
+  validateAndSend = (e) => {
+    if (
+      validator.isAlpha(this.state.name) === true &&
+      validator.isEmail(this.state.email) === true &&
+      validator.isAscii(this.state.message) === true
+    ) {
+      this.setState({
+        validateForm: true,
+      });
+      this.sendEmail();
+    } else {
+      alert("not a valid entry");
+    }
+    e.preventDefault(e);
+  };
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
 
-  sendEmail = (e) => {
+  sendEmail = () => {
     fetch("http://localhost:4000/post", {
       method: "POST",
       headers: {
@@ -28,64 +47,68 @@ class ContactForm extends Component {
       name: "",
       email: "",
       message: "",
+      show: true,
+      validateForm: false,
     });
-    e.preventDefault();
   };
 
   render() {
     return (
-      <div className="container-sm mt-4 form-center">
-        <form
-          key="contact-form"
-          className="border rounded mb-3 pb-3 form"
-          onSubmit={(e) => this.sendEmail(e)}
-        >
-          <div className="bg-light">
-            <h4>Contact Us</h4>
-            <span>Please tell us how stupid you are</span>
-          </div>
-          <br />
+      <div className="cover">
+        <div className="mt-4 form-center">
+          <form
+            key="contact-form"
+            className="border rounded mb-3 pb-3 form"
+            onSubmit={(e) => this.validateAndSend(e)}
+          >
+            <div className="bg-light">
+              <h4>Contact Us</h4>
+              <span>Let us know what you need</span>
+            </div>
+            <br />
 
-          <span style={{ fontWeight: 600 }}>full name </span>
-          <br />
-          <input
-            className="border rounded"
-            type="text"
-            placeholder="mentally challenged name here"
-            name="name"
-            value={this.state.name}
-            onChange={(e) => this.handleChange(e)}
-          />
-          <br />
-          <span style={{ fontWeight: 600 }}>email </span>
-          <br />
-          <input
-            className="border rounded"
-            type="text"
-            placeholder="...agent@kw.com"
-            name="email"
-            value={this.state.email}
-            onChange={(e) => this.handleChange(e)}
-          ></input>
-          <br />
-          <span className="border rounded" style={{ fontWeight: 600 }}>
-            message
-          </span>
-          <br />
-          <textarea
-            type="text"
-            placeholder="...question about greensheet"
-            className="border rounded txt-area"
-            name="message"
-            value={this.state.message}
-            onChange={(e) => this.handleChange(e)}
-          ></textarea>
-          <br />
+            <span style={{ fontWeight: 600 }}>Full Name </span>
+            <i style={{ color: "red" }}>*</i>
+            <br />
+            <input
+              className="border rounded"
+              type="text"
+              placeholder="type in your name here"
+              name="name"
+              value={this.state.name}
+              onChange={(e) => this.handleChange(e)}
+            />
+            <br />
+            <span style={{ fontWeight: 600 }}>email </span>
+            <i style={{ color: "red" }}>*</i>
+            <br />
+            <input
+              className="border rounded"
+              type="text"
+              placeholder="...agent@kw.com"
+              name="email"
+              value={this.state.email}
+              onChange={(e) => this.handleChange(e)}
+            ></input>
+            <br />
+            <span style={{ fontWeight: 600 }}>message</span>
+            <i style={{ color: "red" }}>*</i>
+            <br />
+            <textarea
+              type="text"
+              placeholder="...I have a question for you"
+              className="border rounded txt-area"
+              name="message"
+              value={this.state.message}
+              onChange={(e) => this.handleChange(e)}
+            ></textarea>
+            <br />
 
-          <button type="submit" className="btn btn-outline-info">
-            submit
-          </button>
-        </form>
+            <button type="submit" className="btn btn-outline-secondary">
+              {this.state.show !== true ? "submit" : this.state.formReply}
+            </button>
+          </form>
+        </div>
       </div>
     );
   }

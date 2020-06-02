@@ -19,7 +19,7 @@ class Home extends Component {
         </div>
         <div className="container body-txt">
           <Fade bottom>
-            <h2>Things to help those that are stupid</h2>
+            <h2>Agent Services</h2>
           </Fade>
           <Fade bottom>
             {" "}
