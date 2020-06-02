@@ -13,26 +13,30 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="container-sm">
           <Header />
           <img className="photo" src={mcLogo} alt="mclogo" />
         </div>
-        <div className="container body-txt">
+        <div className="container body-txt pt-4">
           <Fade bottom>
-            <h2>Agent Services</h2>
+            <h2 style={{ fontWeight: "500" }} className="coach-p">
+              Agent Services
+            </h2>
           </Fade>
           <Fade bottom>
             {" "}
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo
-              vel fringilla est ullamcorper eget nulla. Eu lobortis elementum
-              nibh tellus molestie nunc non blandit. Proin sed libero enim sed
-              faucibus turpis in eu. Nulla aliquet enim tortor at auctor urna
-              nunc id. Purus sit amet volutpat consequat mauris nunc. Mattis
-              vulputate enim nulla aliquet. Ut placerat orci nulla pellentesque
-              dignissim enim sit amet venenatis. Dignissim suspendisse in est
-              ante in nibh mauris cursus.
+              This site is designed to help you with all avenues of training and
+              information within Keller Williams Tampa Central. You will be able
+              to find links to common websites you use everyday as a Real Estate
+              Agent. The Tutorials page offers several walk-thru's on KW
+              Command, from marketing to completing a transaction. The resources
+              page is designed as a quick reference guide to support websites
+              and additional learning material. The search portals found on the
+              resource page and navigation pane link to 'answers.kw.com,' a
+              website with a plethora of tutorials on all things KW. Take a look
+              around, subscribe to our calendar, and if you are a Realtor
+              looking to join, please contact us below.
             </p>
           </Fade>
           <hr></hr>

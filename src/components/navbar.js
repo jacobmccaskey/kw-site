@@ -6,11 +6,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-
+import favicon from "../img/favicon.ico";
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
-
-//mikegcol@amazon.com
 
 class NavBar extends Component {
   state = {
@@ -25,11 +23,37 @@ class NavBar extends Component {
 
   onSubmit = (e) => {
     const { input } = this.state;
-    let searchQuery = input.split(" ");
-    searchQuery.join("+");
-    window.open(
-      `https://answers.kw.com/hc/en-us/search?utf8=%E2%9C%93&query=${searchQuery}`
-    );
+    const toLowerCase = input.toLowerCase();
+    if (
+      toLowerCase === "help" ||
+      toLowerCase === "resources" ||
+      toLowerCase === "resource" ||
+      toLowerCase === "guide" ||
+      toLowerCase === "websites"
+    ) {
+      return window.open(`${Routes.RESOURCES}`);
+    }
+    if (
+      toLowerCase === "tutorial" ||
+      toLowerCase === "tutorials" ||
+      toLowerCase === "videos" ||
+      toLowerCase === "video" ||
+      toLowerCase === "walk through" ||
+      toLowerCase === "walk thru" ||
+      toLowerCase === "walk-thru" ||
+      toLowerCase === "command" ||
+      toLowerCase === "how do i get paid?" ||
+      toLowerCase === "how do i get paid"
+    ) {
+      return window.open(`${Routes.TUTORIALS}`);
+    }
+    if (toLowerCase === "shortcuts") return window.open(`${Routes.HOME}`);
+    if (toLowerCase === "calendar") return window.open(`${Routes.CALENDAR}`);
+    else {
+      window.open(`
+    https://answers.kw.com/hc/en-us/search?utf8=%E2%9C%93&query=${toLowerCase}
+    `);
+    }
     this.setState({
       input: "",
     });
@@ -38,7 +62,15 @@ class NavBar extends Component {
   render() {
     return (
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Navbar.Brand href="/">Real-Tech</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={favicon}
+            class="d-inline-block align-top favicon-nav"
+            alt="favicon"
+            loading="lazy"
+          />{" "}
+          Real-TeK
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

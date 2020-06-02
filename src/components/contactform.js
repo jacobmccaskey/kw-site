@@ -55,7 +55,7 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="cover">
-        <div className="mt-4 form-center">
+        <div className="mt-4 form-center form-breakpoint-adjust">
           <form
             key="contact-form"
             className="border rounded mb-3 pb-3 form"
@@ -63,7 +63,7 @@ class ContactForm extends Component {
           >
             <div className="bg-light">
               <h4>Contact Us</h4>
-              <span>Let us know what you need</span>
+              <span>Fill out the form below</span>
             </div>
             <br />
 
@@ -79,7 +79,7 @@ class ContactForm extends Component {
               onChange={(e) => this.handleChange(e)}
             />
             <br />
-            <span style={{ fontWeight: 600 }}>email </span>
+            <span style={{ fontWeight: 600 }}>Email </span>
             <i style={{ color: "red" }}>*</i>
             <br />
             <input

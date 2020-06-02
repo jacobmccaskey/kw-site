@@ -12,15 +12,15 @@ class Header extends Component {
   state = {};
   render() {
     return (
-      <div className="container parallax">
+      <div className="parallax container-sm">
         <AutoplaySlider
           play={true}
           cancelOnInteraction={false} // should stop playing on user interaction
           interval={6000}
         >
-          <div data-src={heroImg} />
+          <div data-src={heroImg} className="slider-img" />
 
-          <div data-src={tampaPhoto} />
+          <div data-src={tampaPhoto} className="slider-img" />
         </AutoplaySlider>
       </div>
     );

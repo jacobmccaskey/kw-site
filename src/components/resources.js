@@ -18,9 +18,38 @@ class Resources extends Component {
   };
 
   handleSubmit = (e) => {
-    window.open(`
-    https://answers.kw.com/hc/en-us/search?utf8=%E2%9C%93&query=${this.state.input}
+    const { input } = this.state;
+    const toLowerCase = input.toLowerCase();
+    if (
+      toLowerCase === "help" ||
+      toLowerCase === "resources" ||
+      toLowerCase === "resource" ||
+      toLowerCase === "guide" ||
+      toLowerCase === "websites"
+    ) {
+      window.open(`${Routes.RESOURCES}`);
+    }
+    if (
+      toLowerCase === "tutorial" ||
+      toLowerCase === "tutorials" ||
+      toLowerCase === "videos" ||
+      toLowerCase === "video" ||
+      toLowerCase === "walk through" ||
+      toLowerCase === "walk thru" ||
+      toLowerCase === "walk-thru" ||
+      toLowerCase === "command" ||
+      toLowerCase === "how do i get paid?" ||
+      toLowerCase === "how do i get paid"
+    ) {
+      window.open(`${Routes.TUTORIALS}`);
+    }
+    if (toLowerCase === "shortcuts") window.open(`${Routes.HOME}`);
+    if (toLowerCase === "calendar") window.open(`${Routes.CALENDAR}`);
+    else {
+      window.open(`
+    https://answers.kw.com/hc/en-us/search?utf8=%E2%9C%93&query=${input}
     `);
+    }
 
     this.setState({
       input: "",

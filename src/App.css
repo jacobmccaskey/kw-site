@@ -17,15 +17,10 @@ hero-img {
   height: 500px;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 .aws-btn {
   --slider-height-percentage: 60%;
-  --slider-transition-duration: 700ms;
-  --organic-arrow-thickness: 4px;
+  --slider-transition-duration: 600ms;
+  --organic-arrow-thickness: 2px;
   --organic-arrow-border-radius: 0px;
   --organic-arrow-height: 40px;
   --organic-arrow-color: #26456f;
@@ -35,11 +30,17 @@ img {
   --control-bullet-color: #2d5182;
   --control-bullet-active-color: #26456f;
   --loader-bar-color: #851515;
-  --loader-bar-height: 6px;
+  --loader-bar-height: 3px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .parallax-wrapper {
   height: 100%;
+  width: 100%;
 }
 .parallax {
   left: 0;
@@ -48,6 +49,25 @@ img {
   display: block;
   position: fixed;
   z-index: -100;
+}
+
+@media only screen and (max-width: 400px) {
+  .parallax {
+    position: relative;
+  }
+  .slider-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-breakpoint-adjust {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+    margin-left: 0%;
+    padding: 0;
+  }
 }
 
 .body-txt {
@@ -68,14 +88,14 @@ img {
   height: 100px;
   width: 150px;
 
-  display: inline-table;
+  position: relative;
   margin: 2px;
 }
 
 /* events component for bottom padding */
 .form {
-  max-width: 600px;
-  margin-left: 22%;
+  max-width: 100%;
+  /* margin-left: 22%; */
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -90,15 +110,20 @@ textarea {
   height: auto;
 }
 
+.shortcut-container {
+  display: inline-block;
+}
+
 .footer {
-  padding-top: 10px;
-  margin-top: 0;
+  position: relative;
+  bottom: 0;
+  padding-top: 30px;
   border-top: unset;
-  display: block;
+  display: inline-block;
   color: grey;
   background-image: -webkit-linear-gradient(rgb(44, 44, 44), black);
-  height: 150px;
-  width: auto;
+  height: 10rem;
+  width: 100%;
 }
 
 .calendar {
@@ -139,8 +164,6 @@ textarea {
   width: 60%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-
 .coach-p {
   font-family: "Playfair Display", serif;
 }
@@ -154,4 +177,35 @@ a {
   text-align: center;
   background-color: white;
   padding-bottom: 15px;
+}
+
+.footer-icon {
+  height: 40px;
+  color: white;
+  right: 10px;
+}
+.icon-container {
+  margin-right: 3%;
+  text-align: center;
+  display: inline-flex;
+  width: 60px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.footer-txt {
+  font-size: 14px;
+}
+
+.favicon-nav {
+  height: 30px;
+  width: 30px;
 }

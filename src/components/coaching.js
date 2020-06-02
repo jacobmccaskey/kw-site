@@ -57,8 +57,10 @@ function Coaches() {
         <hr />
         <Fade bottom>
           <p className="coach-p">
-            Tampa Central offers a coaching program for agents that want to take
-            their business to the next level. If you are looking for
+            Keller Williams Tampa Central is pleased to extend participation to
+            all our new and seasoned agents to the productivity coaching
+            program. We provide a platform to grow your business in an
+            environment with limitless posibilities. If you are looking for
             personalized, one-on-one training, the platinum coaching program is
             for you!
           </p>
