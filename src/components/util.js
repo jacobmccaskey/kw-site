@@ -7,7 +7,7 @@ function connect() {
 }
 
 function command() {
-  window.open("agent.kw.com");
+  window.open("https://agent.kw.com/login");
 }
 
 function facebookGroup() {

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Fade from "react-reveal/Fade";
 import * as Util from "./util";
 
@@ -39,8 +38,7 @@ function Tutorials() {
             <iframe
               title="walk-thru"
               src="https://player.vimeo.com/video/415993212"
-              width="640"
-              height="360"
+              className="videos"
               frameborder="0"
               allow="autoplay; fullscreen"
               allowfullscreen
@@ -62,8 +60,7 @@ function Tutorials() {
             <br />
             <iframe
               title="66 day challenge"
-              width="560"
-              height="315"
+              className="videos"
               src="https://www.youtube.com/embed/r-XZErph4yA"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -81,8 +78,7 @@ function Tutorials() {
             <br />
             <iframe
               title="smart plans"
-              width="560"
-              height="315"
+              className="videos"
               src="https://www.youtube.com/embed/ZW6Qwxd8VkI"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -95,8 +91,7 @@ function Tutorials() {
             <br />
             <iframe
               title="commissions"
-              width="560"
-              height="315"
+              className="videos"
               src="https://www.youtube.com/embed/Iu3VYZxbk-s"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

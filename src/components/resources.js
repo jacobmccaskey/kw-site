@@ -62,7 +62,7 @@ class Resources extends Component {
         <Fade bottom>
           <div className="box container-sm">
             <img src={skyScraper} alt="skyscraper" />
-            <div className="text mt-4">
+            <div className="text margin-top-text">
               <h2 className="coach-p">Resource Portal</h2>
               <br />
               <form onSubmit={(e) => this.handleSubmit(e)}>
@@ -228,77 +228,79 @@ class Resources extends Component {
             <p style={{ fontWeight: 600 }} className="text-left">
               Helpful websites
             </p>
-            <table className="table">
-              <thread>
-                <th scope="col">
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() =>
-                      Util.openNewWindow("https://answers.kw.com/hc/en-us")
-                    }
-                  >
-                    answers.kw.com
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() =>
-                      Util.openNewWindow("https://yourtekhub.com/")
-                    }
-                  >
-                    YourTekHub.com
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() =>
-                      Util.openNewWindow(
-                        "https://www.youtube.com/watch?v=r-XZErph4yA&list=PLK75KZDqV1zmYQF-hNPH2Qt9GHkUHuId4"
-                      )
-                    }
-                  >
-                    66 day challenge
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() => Util.openNewWindow("https://access.kw.com")}
-                  >
-                    mykw.kw.com
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() =>
-                      Util.openNewWindow(
-                        "http://www.kwconnect.com/page/livestreams"
-                      )
-                    }
-                  >
-                    KW livestreams
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() => Util.openNewWindow("https://stellarmls.com")}
-                  >
-                    MLS
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                    onClick={() =>
-                      Util.openNewWindow(
-                        "https://www.kwconnect.com/search?q=%23kwuapprovedguides&tfilter=ALL%2BCONTENT&fbclid=IwAR3iVADS5QdHaJdJ8jimgfKgvOVfG-cnyMuINSvSexNoMMktLcKHFKTjTIc"
-                      )
-                    }
-                  >
-                    KWU Guides
-                  </button>
+            <div className="container-sm">
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() =>
+                  Util.openNewWindow("https://answers.kw.com/hc/en-us")
+                }
+              >
+                answers.kw.com
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() => Util.openNewWindow("https://yourtekhub.com/")}
+              >
+                YourTekHub.com
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() =>
+                  Util.openNewWindow(
+                    "https://www.youtube.com/watch?v=r-XZErph4yA&list=PLK75KZDqV1zmYQF-hNPH2Qt9GHkUHuId4"
+                  )
+                }
+              >
+                66 day challenge
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() => Util.openNewWindow("https://access.kw.com")}
+              >
+                mykw.kw.com
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() =>
+                  Util.openNewWindow(
+                    "http://www.kwconnect.com/page/livestreams"
+                  )
+                }
+              >
+                KW livestreams
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() => Util.openNewWindow("https://stellarmls.com")}
+              >
+                MLS
+              </button>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() =>
+                  Util.openNewWindow(
+                    "https://www.kwconnect.com/search?q=%23kwuapprovedguides&tfilter=ALL%2BCONTENT&fbclid=IwAR3iVADS5QdHaJdJ8jimgfKgvOVfG-cnyMuINSvSexNoMMktLcKHFKTjTIc"
+                  )
+                }
+              >
+                KWU Guides
+              </button>
 
-                  <Link
-                    to={Routes.TUTORIALS}
-                    className="btn btn-outline-secondary mr-2 mt-1"
-                  >
-                    Tutorials
-                  </Link>
-                </th>
-              </thread>
-            </table>
+              <Link
+                to={Routes.TUTORIALS}
+                className="btn btn-outline-secondary mr-2 mt-1"
+              >
+                Tutorials
+              </Link>
+              <button
+                className="btn btn-outline-secondary mr-2 mt-1"
+                onClick={() =>
+                  Util.openNewWindow("https://michaellewismarketingsuite.com/")
+                }
+              >
+                Michael Lewis Marketing
+              </button>
+            </div>
           </div>
         </Fade>
         {/* facebook group stuff */}

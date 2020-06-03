@@ -15,30 +15,36 @@ function Coaches() {
           <table className="table">
             <thread>
               <th scope="col">
-                <img
-                  className="rounded image-box"
-                  src={nick}
-                  alt="nicholas buchanan"
-                />
-                <p className="coaching-font">Nicholas Buchanan</p>
+                <div className="container-sm">
+                  <img
+                    className="rounded image-box"
+                    src={nick}
+                    alt="nicholas buchanan"
+                  />
+                  <p className="coaching-font">Nicholas Buchanan</p>
+                </div>
               </th>
               <th scope="col">
-                <img
-                  className="rounded image-box"
-                  src={ivan}
-                  alt="ivan castillo"
-                />
-                <p className="coaching-font">
-                  Ivan Castillo | Head Productivity Coach
-                </p>
+                <div className="container-sm">
+                  <img
+                    className="rounded image-box"
+                    src={ivan}
+                    alt="ivan castillo"
+                  />
+                  <p className="coaching-font">
+                    Ivan Castillo | Head Productivity Coach
+                  </p>
+                </div>
               </th>
               <th scope="col">
-                <img
-                  className="rounded image-box"
-                  src={billy}
-                  alt="billy lolly"
-                />
-                <p className="coaching-font">Billy Lolly</p>
+                <div className="container-sm">
+                  <img
+                    className="rounded image-box"
+                    src={billy}
+                    alt="billy lolly"
+                  />
+                  <p className="coaching-font">Billy Lolly</p>
+                </div>
               </th>
             </thread>
           </table>

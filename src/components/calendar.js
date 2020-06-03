@@ -4,7 +4,11 @@ import Modal from "react-bootstrap/Modal";
 
 function Calendar() {
   return (
-    <div className="container-sm border rounded">
+    <div className="container-sm border rounded calendar-container">
+      <span className="calendar-text-hidden">
+        Please click on the link below for instructions on how to subscribe to
+        our office intranet calendar.
+      </span>
       <Fade bottom>
         <iframe
           title="calendar"

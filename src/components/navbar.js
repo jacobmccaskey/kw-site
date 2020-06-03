@@ -65,7 +65,7 @@ class NavBar extends Component {
         <Navbar.Brand href="/">
           <img
             src={favicon}
-            class="d-inline-block align-top favicon-nav"
+            className="d-inline-block align-top favicon-nav"
             alt="favicon"
             loading="lazy"
           />{" "}

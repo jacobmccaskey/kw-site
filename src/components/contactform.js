@@ -62,8 +62,8 @@ class ContactForm extends Component {
             onSubmit={(e) => this.validateAndSend(e)}
           >
             <div className="bg-light">
-              <h4>Contact Us</h4>
-              <span>Fill out the form below</span>
+              <h4 classNam="coach-p">Contact Us</h4>
+              {/* <span>Fill out the form below</span> */}
             </div>
             <br />
 
@@ -91,7 +91,7 @@ class ContactForm extends Component {
               onChange={(e) => this.handleChange(e)}
             ></input>
             <br />
-            <span style={{ fontWeight: 600 }}>message</span>
+            <span style={{ fontWeight: 600 }}>Message</span>
             <i style={{ color: "red" }}>*</i>
             <br />
             <textarea

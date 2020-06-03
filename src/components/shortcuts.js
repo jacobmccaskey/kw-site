@@ -9,7 +9,7 @@ class Shortcuts extends Component {
 
   render() {
     return (
-      <div className="container-sm text-center">
+      <div className="container-sm text-center mb-4">
         <Link to={Routes.RESOURCES}>
           <button className="btn btn-lg btn-danger m-2 button">
             Getting Started
