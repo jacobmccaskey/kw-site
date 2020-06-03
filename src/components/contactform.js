@@ -13,7 +13,7 @@ class ContactForm extends Component {
 
   validateAndSend = (e) => {
     if (
-      validator.isAlpha(this.state.name) === true &&
+      validator.isAscii(this.state.name) === true &&
       validator.isEmail(this.state.email) === true &&
       validator.isAscii(this.state.message) === true
     ) {
@@ -33,7 +33,7 @@ class ContactForm extends Component {
   };
 
   sendEmail = () => {
-    fetch("http://localhost:4000/post", {
+    fetch("http://localhost:5000/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

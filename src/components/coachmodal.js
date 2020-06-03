@@ -17,7 +17,7 @@ class CoachContactForm extends Component {
 
   validateAndSend = (e) => {
     if (
-      validator.isAlpha(this.state.name) === true &&
+      validator.isAscii(this.state.name) === true &&
       validator.isEmail(this.state.email) === true &&
       validator.isAscii(this.state.message) === true
     ) {
