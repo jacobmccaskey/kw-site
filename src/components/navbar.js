@@ -67,7 +67,6 @@ class NavBar extends Component {
             src={favicon}
             className="d-inline-block align-top favicon-nav"
             alt="favicon"
-            loading="lazy"
           />{" "}
           Real-TeK
         </Navbar.Brand>

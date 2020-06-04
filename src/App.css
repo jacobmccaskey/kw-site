@@ -71,8 +71,9 @@ img {
 }
 
 .photo {
+  z-index: 1000;
+  opacity: 0.6;
   margin-top: 20%;
-  opacity: 50%;
 }
 
 .button {
