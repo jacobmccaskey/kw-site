@@ -33,8 +33,6 @@ class ContactForm extends Component {
   };
 
   sendEmail = () => {
-    console.log(process.env.REACT_APP_CONTACT);
-    console.log(process.env.REACT_APP_COACHING);
     fetch(process.env.REACT_APP_CONTACT, {
       method: "POST",
       headers: {
