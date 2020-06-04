@@ -27,7 +27,7 @@ class CoachContactForm extends Component {
       this.handleSubmit();
       this.handleClose();
     } else {
-      alert("not a valid entry");
+      alert("NOT A VALID ENTRY");
     }
     e.preventDefault();
   };
@@ -39,7 +39,7 @@ class CoachContactForm extends Component {
   };
 
   handleSubmit = () => {
-    fetch("http://localhost:4000/coaching/post", {
+    fetch(process.env.REACT_APP_COACHING, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

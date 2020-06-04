@@ -22,7 +22,7 @@ class ContactForm extends Component {
       });
       this.sendEmail();
     } else {
-      alert("not a valid entry");
+      alert("NOT A VALID ENTRY");
     }
     e.preventDefault(e);
   };
@@ -33,7 +33,9 @@ class ContactForm extends Component {
   };
 
   sendEmail = () => {
-    fetch("http://localhost:5000/post", {
+    console.log(process.env.REACT_APP_CONTACT);
+    console.log(process.env.REACT_APP_COACHING);
+    fetch(process.env.REACT_APP_CONTACT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
