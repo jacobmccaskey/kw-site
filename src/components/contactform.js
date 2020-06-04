@@ -62,7 +62,7 @@ class ContactForm extends Component {
             onSubmit={(e) => this.validateAndSend(e)}
           >
             <div className="bg-light">
-              <h4 classNam="coach-p">Contact Us</h4>
+              <h4 className="coach-p">Contact Us</h4>
               {/* <span>Fill out the form below</span> */}
             </div>
             <br />
