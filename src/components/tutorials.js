@@ -39,9 +39,9 @@ function Tutorials() {
               title="walk-thru"
               src="https://player.vimeo.com/video/415993212"
               className="videos"
-              frameborder="0"
+              frameBorder="0"
               allow="autoplay; fullscreen"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="container mt-4 mb-4">
@@ -62,9 +62,9 @@ function Tutorials() {
               title="66 day challenge"
               className="videos"
               src="https://www.youtube.com/embed/r-XZErph4yA"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="container mt-4 mb-4">
@@ -80,9 +80,9 @@ function Tutorials() {
               title="smart plans"
               className="videos"
               src="https://www.youtube.com/embed/ZW6Qwxd8VkI"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="container-mt-4 mb-4">
@@ -93,9 +93,9 @@ function Tutorials() {
               title="commissions"
               className="videos"
               src="https://www.youtube.com/embed/Iu3VYZxbk-s"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="container mt-4 mb-4">

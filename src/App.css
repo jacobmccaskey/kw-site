@@ -214,6 +214,25 @@ a {
   display: none;
 }
 
+.nav-btn {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.nav-btn-calendar {
+  color: #212529;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.nav-btn-calendar:hover {
+  text-decoration: none;
+  background-color: inherit;
+  color: #212529;
+}
 /* smaller than 400px viewport */
 
 @media only screen and (max-width: 410px) {

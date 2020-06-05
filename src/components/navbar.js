@@ -3,6 +3,7 @@ import * as Routes from "../constants/routes";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
@@ -73,10 +74,18 @@ class NavBar extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href={Routes.HOME}>Home</Nav.Link>
-            <Nav.Link href={Routes.TUTORIALS}>Tutorials</Nav.Link>
-            <Nav.Link href={Routes.RESOURCES}>Resources</Nav.Link>
-            <Nav.Link href={Routes.COACHING}>Coaching</Nav.Link>
+            <Nav.Link as={Link} to={Routes.HOME}>
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to={Routes.TUTORIALS}>
+              Tutorials
+            </Nav.Link>
+            <Nav.Link as={Link} to={Routes.RESOURCES}>
+              Resources
+            </Nav.Link>
+            <Nav.Link as={Link} to={Routes.COACHING}>
+              Coaching
+            </Nav.Link>
             <NavDropdown title="Quick Links" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://agent.kw.com/command">
                 Command
@@ -90,7 +99,7 @@ class NavBar extends Component {
               <NavDropdown.Item href="https://www.stellarmls.com">
                 MLS
               </NavDropdown.Item>
-              <NavDropdown.Item href={Routes.CALENDAR}>
+              <NavDropdown.Item as={Link} to={Routes.CALENDAR}>
                 Calendar
               </NavDropdown.Item>
             </NavDropdown>
