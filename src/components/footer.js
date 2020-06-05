@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import fblogo from "../img/fbicon.svg";
 import youtubelogo from "../img/youtubeicon.svg";
 import * as Routes from "../constants/routes";
@@ -11,22 +12,26 @@ function Footer() {
         <img className="footer-icon" src={youtubelogo} alt="youtube logo" />
       </div>
       <div className="container-sm">
-        <a href={Routes.HOME} className="footer-link">
+        <Link to={Routes.HOME} className="footer-link">
           {" "}
           Home |
-        </a>
-        <a href={Routes.TUTORIALS} className="footer-link">
+        </Link>
+        <Link to={Routes.TUTORIALS} className="footer-link">
           {" "}
           Tutorials |
-        </a>
-        <a href={Routes.RESOURCES} className="footer-link">
+        </Link>
+        <Link to={Routes.RESOURCES} className="footer-link">
           {" "}
           Resources |
-        </a>
-        <a href={Routes.COACHING} className="footer-link">
+        </Link>
+        <Link to={Routes.COACHING} className="footer-link">
           {" "}
-          Coaching
-        </a>
+          Coaching |
+        </Link>
+        <Link to={Routes.CALENDAR} className="footer-link">
+          {" "}
+          Calendar
+        </Link>
       </div>
       <div className="container-sm">
         <span className="footer-txt">Keller Williams Tampa Central</span>

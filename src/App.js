@@ -21,9 +21,9 @@ function App() {
         <Route path={Routes.RESOURCES} component={Resources} />
         <Route path={Routes.COACHING} component={Coaches} />
         <Route path={Routes.TUTORIALS} component={Tutorials} />
-      </Router>
 
-      <Footer />
+        <Footer />
+      </Router>
     </div>
   );
 }
