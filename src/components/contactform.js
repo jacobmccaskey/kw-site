@@ -33,7 +33,7 @@ class ContactForm extends Component {
   };
 
   sendEmail = () => {
-    fetch(process.env.REACT_APP_CONTACT, {
+    fetch("http://api.kwtctech.com/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
