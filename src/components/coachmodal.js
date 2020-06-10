@@ -39,7 +39,7 @@ class CoachContactForm extends Component {
   };
 
   handleSubmit = () => {
-    fetch("http://api.kwtctech.com/coaching/post", {
+    fetch("https://api.kwtctech.com/coaching/post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
