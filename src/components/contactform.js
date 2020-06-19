@@ -63,7 +63,6 @@ class ContactForm extends Component {
           >
             <div className="bg-light">
               <h4 className="coach-p">Contact Us</h4>
-              {/* <span>Fill out the form below</span> */}
             </div>
             <br />
 

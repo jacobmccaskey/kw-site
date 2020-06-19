@@ -278,3 +278,14 @@ a {
     margin-top: 0rem;
   }
 }
+
+/* css for login page */
+.loginpage {
+  height: 400px;
+  margin-top: 200px;
+}
+.login-form-bg {
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
