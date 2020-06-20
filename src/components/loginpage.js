@@ -8,7 +8,7 @@ const useForm = () => {
 
   const handleSubmit = (event) => {
     if (event) event.preventDefault();
-    fetch("http://localhost:5000/authenticate", {
+    fetch("https://api.kwtctech.com/authenticate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -49,20 +49,17 @@ export default function TutorialLogin() {
     if (effectValue === true && showTutorials === false) {
       return setShow(true);
     }
-    console.log("useEffect");
   }, [effectValue, showTutorials]);
 
   return (
     <React.Fragment>
-      <div className="loginpage">
-        <div
-          className="mt-4 container border p-4 rounded login-form-bg"
-          style={
-            showTutorials !== true
-              ? { display: "relative" }
-              : { display: "none" }
-          }
-        >
+      <div
+        className="loginpage"
+        style={
+          showTutorials !== true ? { display: "relative" } : { display: "none" }
+        }
+      >
+        <div className="mt-4 container border p-4 rounded login-form-bg">
           <form name="login" onSubmit={handleSubmit}>
             <label>
               Password:
