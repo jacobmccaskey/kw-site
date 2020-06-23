@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Tutorials from "./tutorials";
+import Ignite from "./ignite";
 
 const useForm = () => {
   const [effectValue, setValue] = useState(null);
@@ -17,9 +17,14 @@ const useForm = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        data.access === "granted" ? setValue(true) : setValue(false);
+        data.access === "granted" ? setValue(true) : handleRejection();
       });
     // value.password === "password" ? setValue(true) : setValue(null);
+  };
+
+  const handleRejection = () => {
+    alert("wrong password");
+    setValue(false);
   };
 
   const handleChange = (event) => {
@@ -37,7 +42,7 @@ const useForm = () => {
   };
 };
 
-export default function TutorialLogin() {
+export default function IgniteLogin() {
   const { handleChange, handleSubmit, effectValue } = useForm();
   const [showTutorials, setShow] = useState(false);
 
@@ -85,7 +90,7 @@ export default function TutorialLogin() {
           showTutorials === true ? { display: "block" } : { display: "none" }
         }
       >
-        <Tutorials />
+        <Ignite />
       </div>
     </React.Fragment>
   );

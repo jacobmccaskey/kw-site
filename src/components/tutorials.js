@@ -1,5 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import * as Routes from "../constants/routes";
 import * as Util from "./util";
 
 function Tutorials() {
@@ -35,6 +37,19 @@ function Tutorials() {
         <div className="container mt-4 mb-4">
           <Fade bottom>
             <hr />
+            <h2 className="coach-p">Ignite Course Recordings</h2>
+            <p className="coach-p">
+              <i>Taught by Kelly Everhart</i>
+              <br />
+              <Link to={Routes.IGNITE} className="btn btn-danger mt-2">
+                ignite classes
+              </Link>
+            </p>
+          </Fade>
+        </div>
+        <div className="container mt-4 mb-4">
+          <Fade bottom>
+            <hr />
             <h2 className="coach-p">
               Video Walkthrough: Using Docusign & Creating Opportunities{" "}
             </h2>
@@ -48,6 +63,7 @@ function Tutorials() {
                 allowFullScreen
               ></iframe>
             </div>
+
             <div className="container mt-4 mb-4">
               <hr />
               <h2 className="coach-p">
