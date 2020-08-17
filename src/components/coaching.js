@@ -19,6 +19,7 @@ function Coaches() {
                   <img
                     className="rounded image-box"
                     src={nick}
+                    loading="lazy"
                     alt="nicholas buchanan"
                   />
                   <p className="coaching-font">Nicholas Buchanan</p>
@@ -29,6 +30,7 @@ function Coaches() {
                   <img
                     className="rounded image-box"
                     src={ivan}
+                    loading="lazy"
                     alt="ivan castillo"
                   />
                   <p className="coaching-font">
@@ -42,6 +44,7 @@ function Coaches() {
                     className="rounded image-box"
                     src={billy}
                     alt="billy lolly"
+                    loading="lazy"
                   />
                   <p className="coaching-font">Billy Lolly</p>
                 </div>

@@ -61,7 +61,7 @@ class Resources extends Component {
       <div>
         <Fade bottom>
           <div className="box container-sm">
-            <img src={skyScraper} alt="skyscraper" />
+            <img src={skyScraper} alt="skyscraper" loading="lazy" />
             <div className="text margin-top-text">
               <h2 className="coach-p">Resource Portal</h2>
               <br />
