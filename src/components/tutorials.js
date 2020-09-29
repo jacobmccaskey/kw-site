@@ -39,7 +39,6 @@ function Tutorials() {
             <hr />
             <h2 className="coach-p">Ignite Course Recordings</h2>
             <p className="coach-p">
-              <i>Taught by Kelly Everhart</i>
               <br />
               <Link to={Routes.IGNITE} className="btn btn-danger mt-2">
                 ignite classes
@@ -113,6 +112,19 @@ function Tutorials() {
                 title="commissions"
                 className="videos"
                 src="https://www.youtube.com/embed/Iu3VYZxbk-s"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="container-mt-4 mb-4">
+              <hr />
+              <h2 className="coach-p">Video Walkthrough: Contracts With Bill Kilpatrick</h2>
+              <br />
+              <iframe
+                title="contracts w/Bill Kilpatrick"
+                className="videos"
+                src="https://www.youtube.com/embed/os0fp9esCtE"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
