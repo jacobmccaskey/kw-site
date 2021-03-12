@@ -182,9 +182,9 @@ class Resources extends Component {
               <li className="text-left coach-p">
                 Billy Lolly | billylolly@kw.com | (813) 966-7446{" "}
               </li>
-              <li className="text-left coach-p">
+              {/* <li className="text-left coach-p">
                 Nicholas Buchanan | njbuchanan@kw.com | (813) 760-1054
-              </li>
+              </li> */}
             </ul>
 
             <br />

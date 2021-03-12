@@ -14,7 +14,7 @@ function Coaches() {
         <Fade bottom>
           <table className="table">
             <thread>
-              <th scope="col">
+              {/* <th scope="col">
                 <div className="container-sm">
                   <img
                     className="rounded image-box"
@@ -24,7 +24,7 @@ function Coaches() {
                   />
                   <p className="coaching-font">Nicholas Buchanan</p>
                 </div>
-              </th>
+              </th> */}
               <th scope="col">
                 <div className="container-sm">
                   <img

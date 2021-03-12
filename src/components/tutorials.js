@@ -39,7 +39,7 @@ function Tutorials() {
             <hr />
             <h2 className="coach-p">Ignite Course Recordings</h2>
             <p className="coach-p">
-              <i>Taught by Kelly Everhart</i>
+              {/* <i>Taught by Kelly Everhart</i> */}
               <br />
               <Link to={Routes.IGNITE} className="btn btn-danger mt-2">
                 ignite classes

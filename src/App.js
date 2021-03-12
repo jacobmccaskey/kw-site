@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Route exact path={Routes.HOME} component={Home} />
+        <Route exact path={Routes.HOME} render={() => <Home />} />
         <Route path={Routes.CALENDAR} component={Calendar} />
         <Route path={Routes.RESOURCES} component={Resources} />
         <Route path={Routes.COACHING} component={Coaches} />
