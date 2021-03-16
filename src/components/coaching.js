@@ -4,7 +4,6 @@ import CoachContactForm from "./coachmodal";
 import * as Util from "./util";
 import logo from "../img/coach-logo.jpg";
 import billy from "../img/billy.png";
-import nick from "../img/nick.png";
 import ivan from "../img/ivan.jpg";
 
 function Coaches() {
